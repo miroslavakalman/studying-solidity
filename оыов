@@ -1,0 +1,105 @@
+1. Для 1-1.php:
+
+```php
+<?php
+$var1 = 10;
+$var2 = "Hello";
+$var3 = 3.14;
+$var4 = true;
+$var5 = array(1, 2, 3);
+
+echo gettype($var1) . "\n";
+echo gettype($var2) . "\n";
+echo gettype($var3) . "\n";
+echo gettype($var4) . "\n";
+echo gettype($var5) . "\n";
+?>
+```
+
+2. Для 1-2.php:
+
+```php
+<?php
+$num1 = 20;
+$num2 = 5;
+
+$result = $num1 + $num2;
+
+echo "Результат: " . $result;
+?>
+```
+
+3. Для 1-3.php:
+
+```php
+<?php
+$str1 = "Привет, ";
+$str2 = "мир!";
+
+$result = $str1 . $str2;
+
+echo $result;
+?>
+```
+
+4. Для 1-4.php:
+
+```php
+<?php
+$var1 = 10;
+$var2 = 20;
+
+$result = ($var1 === $var2) ? "Значения равны" : "Значения не равны";
+
+echo $result;
+?>
+```
+
+5. Для условного перехода:
+
+```php
+<?php
+$sageAge = 25;
+
+if ($sageAge >= 18 && $sageAge <= 35) {
+    echo "Счастливчик!";
+} elseif ($sageAge >= 1 && $sageAge <= 17) {
+    echo "Слишком молод";
+} else {
+    echo "Не повезло";
+}
+?>
+```
+
+6. Для массива четных чисел:
+
+```php
+<?php
+$evenNumbers = [];
+
+for ($i = 2; $i <= 100; $i += 2) {
+    if ($i % 5 == 0) {
+        $evenNumbers[] = $i;
+    }
+}
+
+print_r($evenNumbers);
+?>
+```
+
+7. Для двумерного массива:
+
+```php
+<?php
+$data = [
+    ["Name", "Address", "Phone", "Mail"],
+    ["Иванов", "Москва, Коптево, 99", "905-847-2345", "asf@mail.ru"]
+];
+
+foreach ($data as $row) {
+    foreach ($row as $value) {
+        echo $value . "\n";
+    }
+}
+?>
+```
